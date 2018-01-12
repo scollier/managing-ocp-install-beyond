@@ -15,7 +15,7 @@
       image: "{{ tower_ami_id }}"
       wait: yes
       instance_tags:
-        Name: "tower-{{ lab_user }}-{{ item }}.{{ domain_name }}"
+        Name: "{{ lab_user }}-{{ item }}.{{ domain_name }}"
         lab_name: "{{ lab_name }}"
         lab_user: "{{ lab_user }}"
         lab_role: "tower"
